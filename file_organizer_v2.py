@@ -79,8 +79,7 @@ def main():
     folder_sort()
     for key, value in wow.items():
         file_sort(key, value)
-    os.system("notify-send 'Files sorted successfully' 'Enjoy'")
-
+    # os.system("notify-send 'Files sorted successfully' 'Enjoy'")
 
 if __name__ == "__main__":
     main()
