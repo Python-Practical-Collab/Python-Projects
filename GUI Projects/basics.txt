@@ -1,0 +1,6 @@
+any thing in tkinter needs atleast 3 elements.
+
+1. widgets - anything ranging from text boxes, buttons, headings etc etc are all called widget.
+2. layout - how are widgets arranged in the window
+3. style - color of the elements, size of the elements etc etc
+
