@@ -4,7 +4,10 @@ import forex_python.converter as CurrencyRates
 class Main:
     
     def convert(self, inCurr, outCurr, values:float = None):
-        print(f"Converting {inCurr} -> {outCurr}")
+
+        if inCurr == "" or outCurr == "":
+            return "Please provide some values."
+        else: pass
 
         try:
             rates = CurrencyRates.get_rate(inCurr, outCurr)
@@ -17,7 +20,7 @@ class Main:
         else:
             pass
 
-        return (f"{values} {inCurr} in {outCurr} is {round(rates * values, 2)} {outCurr}")
+        return (f"{values} {inCurr} is {round(rates * values, 2)} {outCurr}")
 
 
 def start():
