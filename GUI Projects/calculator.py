@@ -8,7 +8,7 @@ def logic():
 	if queryInput == "": 
 		outputString.set("This won't work")
 		return
-	check = [True if i in "1234567890+-/*%" else False for i in queryInput]
+	check = [True if i in "1234567890+-/*%." else False for i in queryInput]
 	
 	try:
 		if False in check:
@@ -36,7 +36,7 @@ entry.pack(side = "left", padx = 10)
 button.pack(side = "left", padx = 10)
 input_frame.pack(pady = 10)
 
-outputString = ttk.StringVar()
+outputString = ttk.DoubleVar()
 output = ttk.Label(master = window, text = "Output", font = ("Atkinson Hyperlegible", 16), textvariable = outputString)
 output.pack()
 
