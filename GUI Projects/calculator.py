@@ -4,12 +4,19 @@ import tkinter as tk
 import ttkbootstrap as ttk
 
 def logic():
-    queryInput = query.get()
-    check = [True if i in "1234567890+-/*" else False for i in queryInput]
-    if False in check:
-        outputString.set("Invalid characters were found in your input.")
-    else:
-        outputString.set(round(eval(queryInput), 4))
+	queryInput = query.get()
+	if queryInput == "": 
+		outputString.set("This won't work")
+		return
+	check = [True if i in "1234567890+-/*%" else False for i in queryInput]
+	
+	try:
+		if False in check:
+			outputString.set("Invalid characters were found in your input.")
+		else:
+			outputString.set(round(eval(queryInput), 4))
+	except Exception as e:
+		raise SyntaxError(f"E: {str(e)}")
 
 window = ttk.Window(themename = "darkly")
 window.title("Calculator")
