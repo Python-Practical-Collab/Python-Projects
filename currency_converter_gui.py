@@ -1,6 +1,6 @@
 import tkinter as tk
 import ttkbootstrap as ttk
-import currency_converter as cc
+import modules.currency_converter as cc
 
 def test():
     try: 
