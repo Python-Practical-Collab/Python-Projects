@@ -133,13 +133,14 @@ class Weather:
         if result:
             temperature_query = result.get("main")
             if temperature_query:
-                return {
-                    "Current": temperature_query["temp"] - 273,
-                    "Feels": temperature_query["feels_like"] - 273,
-                    "Min": temperature_query["temp_min"] - 273,
-                    "Max": temperature_query["temp_max"] - 273,
-                    "Humidity": temperature_query["humidity"]
-                }
+                # converting them to celsius
+                return [
+                    temperature_query["temp"] - 273,
+                    temperature_query["feels_like"] - 273,
+                    temperature_query["temp_min"] - 273,
+                    temperature_query["temp_max"] - 273,
+                    temperature_query["humidity"]
+                ]
             else:
                 logging.error("Error getting temperature.")
         else:
