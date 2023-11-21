@@ -22,7 +22,7 @@ input_frame = ttk.Frame(master = window) # creating a container to hold the entr
 entryInteger = tk.IntVar() # creating a variable 
 
 entry = ttk.Entry(master = input_frame, textvariable = entryInteger)
-button = ttk.Entry(master = input_frame, text = "Convert", command = logic)
+button = ttk.Button(master = input_frame, text = "Convert", command = logic)
 
 entry.pack(side = "left", padx=10)
 button.pack(side = "left")

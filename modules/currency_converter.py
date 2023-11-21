@@ -3,7 +3,8 @@ import forex_python.converter as CurrencyRates
 
 class Main:
     
-    def convert(self, inCurr, outCurr, values:float = None): # type: ignore
+    @classmethod
+    def convert(inCurr, outCurr, values:float = None): # type: ignore
 
         if inCurr == "" or outCurr == "":
             return "Please provide some values."
