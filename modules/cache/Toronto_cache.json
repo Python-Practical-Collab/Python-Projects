@@ -1,1 +1,46 @@
-{"timestamp": "2023-11-19T14:38:31", "data": {"coord": {"lon": -79.4163, "lat": 43.7001}, "weather": [{"id": 800, "main": "Clear", "description": "clear sky", "icon": "01d"}], "base": "stations", "main": {"temp": 277.21, "feels_like": 273.24, "temp_min": 274.98, "temp_max": 278.95, "pressure": 1012, "humidity": 73}, "visibility": 10000, "wind": {"speed": 5.14, "deg": 240}, "clouds": {"all": 0}, "dt": 1700404431, "sys": {"type": 2, "id": 2043365, "country": "CA", "sunrise": 1700396210, "sunset": 1700430570}, "timezone": -18000, "id": 6167865, "name": "Toronto", "cod": 200}}
+{
+    "timestamp": "2023-11-19T14:38:31",
+    "data": {
+        "coord": {
+            "lon": -79.4163,
+            "lat": 43.7001
+        },
+        "weather": [
+            {
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }
+        ],
+        "base": "stations",
+        "main": {
+            "temp": 277.21,
+            "feels_like": 273.24,
+            "temp_min": 274.98,
+            "temp_max": 278.95,
+            "pressure": 1012,
+            "humidity": 73
+        },
+        "visibility": 10000,
+        "wind": {
+            "speed": 5.14,
+            "deg": 240
+        },
+        "clouds": {
+            "all": 0
+        },
+        "dt": 1700404431,
+        "sys": {
+            "type": 2,
+            "id": 2043365,
+            "country": "CA",
+            "sunrise": 1700396210,
+            "sunset": 1700430570
+        },
+        "timezone": -18000,
+        "id": 6167865,
+        "name": "Toronto",
+        "cod": 200
+    }
+}
