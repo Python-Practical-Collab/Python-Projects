@@ -56,14 +56,13 @@ def main():
         counts += 1
         word_guess = input("Enter your guess: ")[0]
         
-        print(word)
         if word_guess not in word or word_guess in test or word_guess == "":
             print("Invalid guess. Try again.")
             continue
         
         print("Yayiee!! Correct guess!")
-        word_index = word.index(word_guess)
-        test[word_index] = word_guess
+
+        test[word.index(word_guess)] = word_guess
         print(test)
         
 main()

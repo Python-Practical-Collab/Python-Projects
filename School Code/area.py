@@ -1,4 +1,4 @@
-# Area of polygons
+# Area
 
 """
     How it works?
