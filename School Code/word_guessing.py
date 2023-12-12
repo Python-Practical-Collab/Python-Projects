@@ -1,7 +1,5 @@
-from itertools import count
 import json
 import random
-import requests
 
 """
     Alternate method to get the words:
