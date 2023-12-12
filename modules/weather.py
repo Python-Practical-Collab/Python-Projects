@@ -101,7 +101,7 @@ class Weather:
         Returns:
             True or False: True if the cached data is valid, False otherwise.
         """
-        expiration = timedelta(hours = 0.5)
+        expiration = timedelta(hours = 0.25)
         timestamp = datetime.strptime(cached_data["timestamp"], "%Y-%m-%dT%H:%M:%S")
         return datetime.utcnow() - timestamp < expiration
 
@@ -157,7 +157,7 @@ class Weather:
         if result:
             wind_query = result.get("wind")
             if wind_query:
-                return wind_query["speed"], wind_query["deg"]
+                return f"{wind_query['speed']} m/s", wind_query["deg"]
             else:
                 logging.error("Error getting wind information.")
         else:
