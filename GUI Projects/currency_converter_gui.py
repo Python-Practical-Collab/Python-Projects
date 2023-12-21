@@ -30,17 +30,17 @@ input_query = ttk.Label(text = "From: ", master = input_frame, font = ("Anonymou
 
 # variable for input currency
 currFrom = ttk.StringVar()
-input_entry = ttk.Entry(master = input_frame, textvariable = currFrom, width = "8")
+input_entry = ttk.Entry(master = input_frame, textvariable = currFrom, width = 8)
 
 output_query = ttk.Label(text = "To: ", master = input_frame, font = ("Anonymous Pro", 14, "bold"))
 
 # variable for output currency
 currTo = ttk.StringVar()
-output_entry = ttk.Entry(master = input_frame, textvariable = currTo, width = "8")
+output_entry = ttk.Entry(master = input_frame, textvariable = currTo, width = 8)
 
 # variable for amount
 amount = ttk.DoubleVar()
-amount_entry = ttk.Entry(master = input_frame, textvariable = amount, width = "8")
+amount_entry = ttk.Entry(master = input_frame, textvariable = amount, width = 8)
 
 input_query.pack(side = "left", padx = 5)
 input_entry.pack(side = "left", padx = 5)

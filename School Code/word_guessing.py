@@ -52,7 +52,10 @@ def main():
 
     while "_" in test:
         counts += 1
-        word_guess = input("Enter your guess: ")[0]
+        try:
+            word_guess = input("Enter your guess: ")[0]
+        except IndexError:
+            continue
         
         if word_guess not in word or word_guess in test or word_guess == "":
             print("Invalid guess. Try again.")
