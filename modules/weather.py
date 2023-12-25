@@ -17,7 +17,6 @@ class Weather:
         city (str): The name of the city for which weather information is fetched.
         city_url (str): The URL for the OpenWeatherMap API endpoint for the specified city.
     """
-
     def __init__(self, city: str, api: str = "00cd4be2b420a9aac2dceca8849fac6f") -> None:
         """
         Initializes a Weather instance.

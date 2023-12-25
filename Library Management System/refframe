@@ -1,0 +1,25 @@
+ book info
+ borrower's info
+
+import sqlite3
+
+# Connect to SQLite database
+connection = sqlite3.connect('example.db')
+
+# Create a cursor object
+cursor = connection.cursor()
+
+# Create a 'users' table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY,
+        username TEXT NOT NULL,
+        email TEXT NOT NULL
+    )
+''')
+
+# Commit changes
+connection.commit()
+
+# Close the connection
+connection.close()

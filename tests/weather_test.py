@@ -29,3 +29,5 @@ class TestWeather(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+# this is just a small test whether the live share is working as intended or not
