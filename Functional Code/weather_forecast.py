@@ -30,5 +30,4 @@ class Main:
         print(f"But, it may feel like {weather_data['temperatureApparent']}°C")
         print(f"Humidity: {weather_data['humidity']}%")
 
-
 a = Main("Ludhiana").make_request()
